@@ -8,11 +8,15 @@ $(function () {
     var music = $("input[name=music]:checked").val();
     var food = $("input[name=food]:checked").val();
 
-    if (age >= 50 && gender === "male" && music === "country") {
+    if (food === "soylent-green") {
+      $("#charleton-heston").show();
+    }
+
+    else if (age >= 50 && gender === "male" || music === "country") {
       $("#dolly-parton").show();
     }
 
-    else if (age <= 20 && gender === "female" && music === "pop") {
+    else if (age <= 20 && gender === "female" && music === "pop" && food != "pizza") {
       $("#justin-bieber").show();
     }
 
