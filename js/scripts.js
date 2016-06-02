@@ -8,20 +8,26 @@ $(function () {
     var music = $("input[name=music]:checked").val();
     var food = $("input[name=food]:checked").val();
 
-    if (food === "soylent-green") {
-      $("#charleton-heston").show();
-    }
+    if (age) {
+      if (food === "soylent-green") {
+        $("#charleton-heston").show();
+      }
 
-    else if (age >= 50 && gender === "male" || music === "country") {
-      $("#dolly-parton").show();
-    }
+      else if (age >= 50 && gender === "male" || music === "country") {
+        $("#dolly-parton").show();
+      }
 
-    else if (age <= 20 && gender === "female" && music === "pop" && food != "pizza") {
-      $("#justin-bieber").show();
-    }
+      else if (age <= 20 && gender === "female" && music === "pop" && food != "pizza") {
+        $("#justin-bieber").show();
+      }
 
-    else {
-      $("#no-celebrities").show();
+      else {
+        $("#no-celebrities").show();
+      }
     }
+  else {
+    $(".age-error").addClass("has-error");
+    $("span.help-block").show();
+  }
   });
 });
