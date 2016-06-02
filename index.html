@@ -31,12 +31,65 @@
   <body>
     <div class="container">
       <header>
-        <h1>Epicodus Project Template</h1>
+        <h1>Celebrity Dating</h1>
       </header>
-      <h2>Hello World!</h2>
+      <h2>Find out the best celebrity for you.</h2>
       <p>
-        This is a nice little index file.  It calls in five different files to support Bootstrap, JQuery, and your custom css and js.
+        Fill out the fields below and we'll tell you your perfect match.
       </p>
+      <form>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" class="form-control" id="age" placeholder="How old are you? (in years)">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <input type="text" class="form-control" id="gender" placeholder="What's your gender?">
+        </div>
+        <div class="radio">
+          <p>
+            <strong>What type of music do you prefer?</strong>
+          </p>
+          <label>
+            <input type="radio" name="music" value="country" checked>
+            Country
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="pop">
+            Pop
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="hiphop">
+            Hip Hop
+          </label>
+        </div>
+        <div class="radio">
+          <p>
+            <strong>What type of food do you prefer?</strong>
+          </p>
+          <label>
+            <input type="radio" name="food" value="noodles" checked>
+            Noodles
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="pizza">
+            Pizza
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="soylent-green">
+            Soylent Green
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
       <footer>
         <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
       </footer>
