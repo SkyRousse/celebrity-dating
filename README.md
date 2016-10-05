@@ -4,7 +4,7 @@
 
 ## Description
 
-__Practice seting up form to gather political prefs and using js to calculate a number that reveals political preference__
+__More practice with JS / jQuery using conditionals and calculations to deliver various possible results. In this case, whether you're a better match with Justin Beiber, or Dolly Parton.__
 
 ## Setup/Installation Requirements
 
